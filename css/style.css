@@ -210,6 +210,24 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.nav-logo.signature-logo {
+  font-family: 'Sacramento', 'Allison', cursive;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--kin);
+  text-shadow: 0 0 10px rgba(201, 166, 107, 0.1);
+  transition: transform var(--transition), color var(--transition);
+  display: inline-block;
+  line-height: 1;
+  padding-bottom: 2px;
+}
+
+.nav-logo.signature-logo:hover {
+  transform: scale(1.08) rotate(-3deg);
+  color: var(--shu);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
