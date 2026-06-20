@@ -32,14 +32,23 @@ function applyTheme(theme) {
   }
 }
 
-const savedTheme = sessionStorage.getItem('theme') || 'dark';
+let savedTheme = 'dark';
+try {
+  savedTheme = sessionStorage.getItem('theme') || 'dark';
+} catch (e) {
+  console.warn('sessionStorage is not accessible:', e);
+}
 applyTheme(savedTheme);
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
     const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     applyTheme(next);
-    sessionStorage.setItem('theme', next);
+    try {
+      sessionStorage.setItem('theme', next);
+    } catch (e) {
+      console.warn('sessionStorage is not accessible:', e);
+    }
   });
 }
 
