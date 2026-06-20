@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nithyanandam N — Portfolio</title>
+  <meta name="description" content="Nithyanandam N — B.Tech IT student. Full-stack &amp; app developer. Projects, skills, and resume.">
+
+  <!-- Open Graph (so the link previews well when shared with recruiters) -->
+  <meta property="og:title" content="Nithyanandam N — Portfolio">
+  <meta property="og:description" content="B.Tech IT student. Full-stack &amp; app developer.">
+  <meta property="og:type" content="website">
+  <!-- TODO: add og:image pointing to a hosted preview image, e.g. assets/images/og-preview.jpg -->
+
+  <!-- TODO: replace with a real favicon file in assets/icons/ -->
+  <link rel="icon" href="data:,">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a class="nav-logo" href="#hero">Nithyanandam N</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch between light and dark theme">
+          <span aria-hidden="true">☀</span>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-resume" href="assets/resume/resume.pdf" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-crane-canvas" id="craneCanvas" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">Software Engineer | Full-Stack &amp; Mobile Developer</p>
+        <h1 class="hero-name">Nithyanandam N</h1>
+        <p class="hero-tagline">Building intuitive web and mobile applications with a focus on user experience, clean design, and real-world problem solving.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/resume/resume.pdf" download>Download Resume</a>
+          <a class="btn btn-secondary" href="#projects">View Projects</a>
+        </div>
+      </div>
+
+      <div class="vertical-jp" aria-hidden="true">学生エンジニア</div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-head reveal">
+        <span class="section-jp" aria-hidden="true">自己紹介</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-photo">
+          <img src="assets/images/profile.jpg" alt="Nithyanandam N" loading="lazy"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="about-text">
+          <p>I am Nithyanandam N, a B.Tech Information Technology student at Bannari Amman Institute of Technology with a strong interest in software engineering, full-stack development, and mobile application development. I enjoy building scalable and user-focused applications that solve real-world problems while continuously exploring emerging technologies. Through academic projects, hackathons, and hands-on development experience, I have developed a solid foundation in modern software development and a passion for creating impactful digital solutions.</p>
+          <p>I am currently seeking internship and project opportunities where I can apply my technical skills, collaborate with talented teams, and contribute to meaningful products. My goal is to grow into a skilled software engineer capable of delivering innovative and high-quality solutions that create real value for users and organizations.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="crane-mark"></span></div>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <div class="section-head reveal">
+        <span class="section-jp" aria-hidden="true">スキル</span>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Java (Advanced)</span><span class="skill-bar" style="--level:90%"></span></li>
+            <li><span class="skill-name">JavaScript (Intermediate)</span><span class="skill-bar" style="--level:75%"></span></li>
+            <li><span class="skill-name">Python (Intermediate)</span><span class="skill-bar" style="--level:70%"></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Frontend &amp; Mobile</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">React.js</span><span class="skill-bar" style="--level:80%"></span></li>
+            <li><span class="skill-name">React Native</span><span class="skill-bar" style="--level:80%"></span></li>
+            <li><span class="skill-name">Flutter</span><span class="skill-bar" style="--level:75%"></span></li>
+            <li><span class="skill-name">UI/UX Design</span><span class="skill-bar" style="--level:75%"></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Backend &amp; Databases</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Node.js &amp; Express.js</span><span class="skill-bar" style="--level:75%"></span></li>
+            <li><span class="skill-name">MySQL</span><span class="skill-bar" style="--level:75%"></span></li>
+            <li><span class="skill-name">MongoDB</span><span class="skill-bar" style="--level:70%"></span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul class="skill-list">
+            <li><span class="skill-name">Git &amp; GitHub</span><span class="skill-bar" style="--level:85%"></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-head reveal">
+        <span class="section-jp" aria-hidden="true">プロジェクト</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-grid reveal">
+
+        <article class="project-card">
+          <h3>BIT School — Mobile App</h3>
+          <p>Developed the frontend and UI/UX for a smart education and learning mobile application. Collaborated within a six-member team to create an engaging and user-friendly learning platform.</p>
+          <ul class="tag-list">
+            <li>React Native</li>
+          </ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>PROJECTS7 — Web Application</h3>
+          <p>Contributed to frontend development and UI/UX design for a web application that manages internal and external project assignments, reviews, and results.</p>
+          <ul class="tag-list">
+            <li>React.js</li>
+          </ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>EDVANTA — Smart Attendance System</h3>
+          <p>Developed frontend interfaces and contributed to AI-integrated attendance management features. Designed for attendance tracking and curriculum management using modern technologies.</p>
+          <ul class="tag-list">
+            <li>React Native</li><li>OpenCV</li><li>TensorFlow</li>
+          </ul>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span class="crane-mark"></span></div>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="education" id="education">
+      <div class="section-head reveal">
+        <span class="section-jp" aria-hidden="true">学歴</span>
+        <h2>Education, Certifications &amp; Achievements</h2>
+      </div>
+
+      <div class="education-grid reveal">
+        <div class="edu-card">
+          <h3>B.Tech, Information Technology</h3>
+          <p class="edu-meta">Bannari Amman Institute of Technology · 2024 – 2028</p>
+          <p>CGPA: 8.35</p>
+        </div>
+
+        <div class="edu-card">
+          <h3>Certifications</h3>
+          <ul class="cert-list">
+            <li>Oracle Certified Professional: Java SE 17 Developer</li>
+            <li>Oracle Cloud Infrastructure (OCI) AI Foundations Associate</li>
+            <li>Infosys JavaScript Certification</li>
+            <li>Salesforce Agentblazer Champion</li>
+            <li>Salesforce Agentblazer Innovator</li>
+          </ul>
+        </div>
+
+        <div class="edu-card">
+          <h3>Achievements</h3>
+          <ul class="cert-list">
+            <li>Hack'IT On'25 – 3rd Place</li>
+            <li>Hack'IT'Thon 2.0 – Finalist</li>
+            <li>TN Skills 2025 (Mobile Application Development) – Level 3 Participant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-head reveal">
+        <span class="section-jp" aria-hidden="true">絵馬</span>
+        <h2>Leave a Message</h2>
+      </div>
+
+      <p class="contact-intro reveal">Like an ema votive tablet — leave a short note and I'll get back to you.</p>
+
+      <form class="contact-form reveal" id="contactForm">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-links reveal">
+        <a href="mailto:nnithyanandam024@gmail.com">nnithyanandam024@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nnithyanandam024/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/nnithyanandam024" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="crane-mark footer-crane" aria-hidden="true"></span>
+    <p>&copy; 2026 Nithyanandam N. Built with care.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script type="module" src="js/crane.js?v=2"></script>
+</body>
+</html>

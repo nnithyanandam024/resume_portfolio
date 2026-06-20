@@ -1,0 +1,1 @@
+Add your profile photo here (e.g. profile.jpg) and update the <img src> in index.html.
